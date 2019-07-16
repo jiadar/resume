@@ -1,0 +1,159 @@
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Javin Lacson}{}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:work.at.javin.io}{work\mbox{}@\mbox{}javin.io}\sbull
+\textsmaller415.264.0616\sbull
+\href{https://www.javin.io}{https://www.javin.io}\sbull
+2340 Robert St\sbull
+New Orleans, LA
+
+\spacedhrule{0.6em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent \emph{Talented engineer with a passion for software development in large capacity, secure, performant, \& highly available environments. Able to consistently deliver optimized technology solutions within required business context. }
+\vspace{0.3em}
+\\
+{During his early years, Javin taught himself programming on a TI-99, learned assembly on the C64 from printed manuals, and published numerous articles in computer magazines. He wrote the adventure game Eye of Levata in {\textsc{Basic}} \& 6502 assembly utilizing interrupts to simulate multi-threading.
+}
+
+{While obtaining his Computer Science degree, he gained a variety of skills including full stack web development and at-scale operations. During his career, he lived and worked in San Francisco for both startups and tech giants on real-time, security sensitive applications. Now back in New Orleans with his family, he is excited to bring the silicon valley fairy dust to his hometown. }
+
+\end{multicols}
+
+
+\spacedhrule{0em}{-0.5em}
+
+\roottitle{Experience}
+
+\headedsection
+  {\href{http://www.javin.io}{Self Employed }}
+  {\textsc{San Francisco Bay Area}} {
+  \headedsubsection
+    {Sr. Software Engineer}
+    {Jul \apo17 -- Jul \apo19}
+    {\bodytext{Full stack software engineering, devops, and consulting for applications in security sensitive environments. Develop software with Javascript, Ruby, Elixir, and Java satisfying {\textsc{Itar}}, {\textsc{Ear}}, {\textsc{Hipaa}}, {\textsc{Nist/Sans}}. Clients:\@ {Curie}, {Fabrix Health}, {ShireCare}, {Drop In}, {American English}, \& {TutorCorps}.}}
+}
+
+\headedsection
+  {\href{http://www.google.com}{Google}}
+  {\textsc{Mountain View, CA}} {%
+  \headedsubsection
+    {Developer Operations Engineer}
+    {Aug \apo14 -- Jun \apo17}
+    {\bodytext{Build and manage the secure {\textsc{Itar/Ear}} private and cloud operations infrastructure supporting image processing over petabyte-sized data sets with real-time requirements. Create multi-tenant, load balanced, security compliant cloud architecture for application development and real-time operations using Ansible, Docker, Ruby/Rails, Python/Django, and internal Google tools.  }}
+}
+
+\headedsection
+  {{Skybox Imaging}}
+  {\textsc{Mountain View, CA}} {
+  \headedsubsection
+    {Developer Operations Engineer}
+    {Jun \apo11 -- Aug \apo14}
+    {\bodytext{Build and manage software and infrastructure automation for spacecraft development, launch, and flight including security, communications, compliance, and devops worldwide.  } }
+}
+
+\headedsection
+  {{Vertical Response}}
+  {\textsc{San Francisco, CA}} {
+  \headedsubsection
+    {Systems Engineer}
+    {May \apo07 -- Jun \apo11}
+    {\bodytext{Build, scale, and manage infrastructure for Ruby/Rails application powering a SaaS platform with billions of annual transactions.  Scaled platform from 93k to 800k users with > 99.9\% availability. } }
+}
+
+
+\headedsection
+  {{Metaweb Technologies}}
+  {\textsc{San Francisco, CA}} {
+  \headedsubsection
+    {Systems Engineer}
+    {Oct \apo04 -- May \apo07}
+    {\bodytext{Developed distributed computing software for data processing applications to create a semantic web. } }
+}
+
+\vspace{0.4em}
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{http://www.tulane.edu}{Tulane University}}
+  {\textsc{New Orleans, LA}} {
+  \headedsubsection
+    {Bachelor of Science, Computer Science}
+    {}
+    {\bodytext{}}
+}
+\vspace{-1.4em}
+\headedsection
+  {\href{http://www.ccsf.edu}{City College of San Francisco}}
+  {\textsc{San Francisco, CA}} {
+  \headedsubsection
+    {Mathematics Concentration \textnormal}
+    {}
+    {\bodytext{}}
+}
+
+\vspace{-1.1em}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Software:}
+  {Can write Elixir, Ruby, Java, Python, \LaTeX, {\textsc{Lisp}}, 6510 assembly, \& Javascript 
+  \textnormal{\textit{~(in order of preference)}}. Full stack engineer with preference of Postgres, Apollo, React, & SSR. Especially enjoy back-end, data modeling, scaling, security, and {\textsc{Api}} development. Unique ability to bring idea from concept to completion. }
+
+\vspace{0.4em}
+\inlineheadsection
+  {Operations:}  
+  {Linux Wizard. Agile methodologies, Kanban/Scrum, continuous delivery (Jenkins, Jira, Ansible, Puppet), Ops infra (Cisco, Netapp, Juniper, Barracuda, F5), virtualization (Vmware, Docker, Kubernetes, Xen, OpenVZ), \& cloud platforms (Google, {\textsc{Aws}}, Digital Ocean). Emacs power user.}
+
+\vspace{0.4em}
+\inlineheadsection
+  {Business:}
+  {Creating high performance culture, recruitment, corporate governance, security, compliance, due diligence, M\&A, interviewing, re-organizations, contracting, financial/project estimation, \& outsourcing. }
+
+\spacedhrule{1.6em}{-0.5em}
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {In no particular order:}
+  {private pilot, college wrestler, rock climber, river kayaker, adventure guide, wilderness first responder, mathematician, entrepreneur, real estate investor, functional programmer, coach, tutor, mentor, woodworker, tinkerer, and most of all 7 wonders duel pantheon expert. }
+
+\end{document}
